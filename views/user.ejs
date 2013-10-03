@@ -1,0 +1,5 @@
+<% if (locals.user) { %>
+	<%- partial('say') %>
+<% } %>
+<!-- 重新将posts付给另外的值传给partaiala的值，否则在posts.ejs收不到参数 -->
+<%- partial('posts',{posts:posts}) %>
